@@ -1,11 +1,10 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/pixelPerfect/PixelPerfectScale.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../TopDownSpaceHorror/Assets/pixelPerfect/PixelPerfectScale.cs">
     <Files>
-      <File FileName="Assets/playerWalk.cs" Line="1" Column="1" />
-      <File FileName="Assets/array.cs" Line="1" Column="1" />
-      <File FileName="Assets/pixelPerfect/PixelPerfectScale.cs" Line="1" Column="1" />
-      <File FileName="Assets/readable.cs" Line="11" Column="19" />
+      <File FileName="Assets/pixelPerfect/PixelPerfectScale.cs" Line="48" Column="3" />
+      <File FileName="Assets/readable.cs" Line="1" Column="1" />
+      <File FileName="../TopDownSpaceHorror/Assets/pixelPerfect/PixelPerfectScale.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

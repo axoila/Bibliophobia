@@ -18,7 +18,7 @@ public class PixelPerfectScale : MonoBehaviour
 
 	void Start() {
 		int screenVerticalPixels = Mathf.RoundToInt(mainCamera.orthographicSize * 2 * pixelsPerUnit);
-		screenVerticalPixels = Screen.height;
+		//screenVerticalPixels = Screen.height;
 		redoRenderTexture (screenVerticalPixels);
 		redoScale (screenVerticalPixels);
 	}
@@ -26,7 +26,7 @@ public class PixelPerfectScale : MonoBehaviour
 	void Update()
 	{
 		int screenVerticalPixels = Mathf.RoundToInt(mainCamera.orthographicSize * 2 * pixelsPerUnit);
-		screenVerticalPixels = Screen.height;
+		//screenVerticalPixels = Screen.height;
 
 		if(screenPixelsY != (float)Screen.height || currentCropped != preferUncropped)
 		{
@@ -44,8 +44,8 @@ public class PixelPerfectScale : MonoBehaviour
 			mainCamera.targetTexture.Release ();
 			Debug.Log ("deleted old virtual screen");
 		}
-		virtScreen = new RenderTexture (screenVerticalPixels * 8, screenVerticalPixels * 4, 24);
-		//virtScreen.filterMode = FilterMode.Point;
+		virtScreen = new RenderTexture (screenVerticalPixels * 2, screenVerticalPixels * 1, 24);
+		virtScreen.filterMode = FilterMode.Point;
 
 		mainCamera.targetTexture = virtScreen;
 		virtScreenMat.SetTexture ("_MainTex", virtScreen);
@@ -69,7 +69,7 @@ public class PixelPerfectScale : MonoBehaviour
 			ratio = Mathf.Ceil(screenRatio)/screenRatio;
 		}
 
-		//transform.localScale = Vector3.one*ratio;
-		transform.localScale = Vector3.one;
+		transform.localScale = Vector3.one*ratio;
+		//transform.localScale = Vector3.one;
 	}
 }
